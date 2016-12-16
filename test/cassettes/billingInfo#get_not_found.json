@@ -1,0 +1,38 @@
+[
+  {
+    "scope": "https://unit-test.recurly.com:443",
+    "method": "GET",
+    "path": "/v2/accounts/not_found",
+    "body": "",
+    "status": 404,
+    "response": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<error>\n  <symbol>not_found</symbol>\n  <description lang=\"en-US\">Couldn't find Account with account_code = not_found</description>\n</error>\n",
+    "rawHeaders": [
+      "Date",
+      "Thu, 15 Dec 2016 20:44:37 GMT",
+      "Content-Type",
+      "application/xml; charset=utf-8",
+      "Transfer-Encoding",
+      "chunked",
+      "Connection",
+      "close",
+      "Vary",
+      "Accept-Encoding",
+      "X-Api-Version",
+      "2.0",
+      "Content-Language",
+      "en-US",
+      "X-RateLimit-Limit",
+      "2000",
+      "X-RateLimit-Remaining",
+      "1996",
+      "X-RateLimit-Reset",
+      "1481834940",
+      "Cache-Control",
+      "no-cache",
+      "Strict-Transport-Security",
+      "max-age=15552000; includeSubDomains; preload",
+      "Server",
+      "cloudflare-nginx"
+    ]
+  }
+]

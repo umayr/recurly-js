@@ -1,1 +1,1 @@
-module.exports = require('./lib/recurly');
+module.exports = require('./lib/recurly')

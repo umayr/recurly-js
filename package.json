@@ -28,14 +28,23 @@
     "xml2js": ">= 0.4.0"
   },
   "engines": {
-    "node": ">= 0.4"
+    "node": ">= 4.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run lint && mocha --recursive test/ --reporter nyan",
+    "lint": "jscs .",
+    "tdd": "mocha --recursive test/ --reporter nyan"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/umayr/recurly-js.git"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "jscs": "^3.0.7",
+    "mocha": "^3.2.0",
+    "nock-vcr-recorder": "^0.1.5",
+    "sinon": "^1.17.6"
+  }
 }

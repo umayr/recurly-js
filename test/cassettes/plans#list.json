@@ -1,0 +1,42 @@
+[
+  {
+    "scope": "https://unit-test.recurly.com:443",
+    "method": "GET",
+    "path": "/v2/plans",
+    "body": "",
+    "status": 200,
+    "response": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<plans type=\"array\">\n  <plan href=\"https://unit-test.recurly.com/v2/plans/annual1\">\n    <add_ons href=\"https://unit-test.recurly.com/v2/plans/annual1/add_ons\"/>\n    <plan_code>annual1</plan_code>\n    <name>Annual Subscription</name>\n    <description>The Premium Subscription description. This is the discounted monthly price that is paid annually.</description>\n    <success_url>https://some.domain.com/checkout/success/</success_url>\n    <cancel_url nil=\"nil\"></cancel_url>\n    <display_donation_amounts type=\"boolean\">false</display_donation_amounts>\n    <display_quantity type=\"boolean\">false</display_quantity>\n    <display_phone_number type=\"boolean\">false</display_phone_number>\n    <bypass_hosted_confirmation type=\"boolean\">true</bypass_hosted_confirmation>\n    <unit_name>unit</unit_name>\n    <payment_page_tos_link nil=\"nil\"></payment_page_tos_link>\n    <plan_interval_length type=\"integer\">12</plan_interval_length>\n    <plan_interval_unit>months</plan_interval_unit>\n    <trial_interval_length type=\"integer\">0</trial_interval_length>\n    <trial_interval_unit>days</trial_interval_unit>\n    <total_billing_cycles nil=\"nil\"></total_billing_cycles>\n    <accounting_code>annual1</accounting_code>\n    <setup_fee_accounting_code></setup_fee_accounting_code>\n    <created_at type=\"datetime\">2016-12-06T20:55:16Z</created_at>\n    <unit_amount_in_cents>\n      <USD type=\"integer\">5882</USD>\n    </unit_amount_in_cents>\n    <setup_fee_in_cents>\n      <USD type=\"integer\">0</USD>\n    </setup_fee_in_cents>\n  </plan>\n  <plan href=\"https://unit-test.recurly.com/v2/plans/monthly1\">\n    <add_ons href=\"https://unit-test.recurly.com/v2/plans/monthly1/add_ons\"/>\n    <plan_code>monthly1</plan_code>\n    <name>Monthly Subscription</name>\n    <description>The Premium Subscription monthly. This is the full price per month.</description>\n    <success_url>https://some.domain.com/checkout/success/</success_url>\n    <cancel_url nil=\"nil\"></cancel_url>\n    <display_donation_amounts type=\"boolean\">false</display_donation_amounts>\n    <display_quantity type=\"boolean\">false</display_quantity>\n    <display_phone_number type=\"boolean\">false</display_phone_number>\n    <bypass_hosted_confirmation type=\"boolean\">true</bypass_hosted_confirmation>\n    <unit_name>unit</unit_name>\n    <payment_page_tos_link nil=\"nil\"></payment_page_tos_link>\n    <plan_interval_length type=\"integer\">1</plan_interval_length>\n    <plan_interval_unit>months</plan_interval_unit>\n    <trial_interval_length type=\"integer\">0</trial_interval_length>\n    <trial_interval_unit>days</trial_interval_unit>\n    <total_billing_cycles nil=\"nil\"></total_billing_cycles>\n    <accounting_code>monthly1</accounting_code>\n    <setup_fee_accounting_code></setup_fee_accounting_code>\n    <created_at type=\"datetime\">2016-12-01T06:36:25Z</created_at>\n    <unit_amount_in_cents>\n      <USD type=\"integer\">897</USD>\n    </unit_amount_in_cents>\n    <setup_fee_in_cents>\n      <USD type=\"integer\">0</USD>\n    </setup_fee_in_cents>\n  </plan>\n</plans>\n",
+    "rawHeaders": [
+      "Date",
+      "Fri, 16 Dec 2016 16:48:08 GMT",
+      "Content-Type",
+      "application/xml; charset=utf-8",
+      "Transfer-Encoding",
+      "chunked",
+      "Connection",
+      "close",
+      "Vary",
+      "Accept-Encoding",
+      "X-Api-Version",
+      "2.0",
+      "Content-Language",
+      "en-US",
+      "X-RateLimit-Limit",
+      "2000",
+      "X-RateLimit-Remaining",
+      "1999",
+      "X-RateLimit-Reset",
+      "1481907180",
+      "X-Records",
+      "2",
+      "Cache-Control",
+      "max-age=0, private, must-revalidate",
+      "X-UA-Compatible",
+      "IE=Edge",
+      "Strict-Transport-Security",
+      "max-age=15552000; includeSubDomains; preload",
+      "Server",
+      "cloudflare-nginx"
+    ]
+  }
+]

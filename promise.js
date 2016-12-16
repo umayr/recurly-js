@@ -1,28 +1,28 @@
-'use strict';
+'use strict'
 
-var Promise = require('bluebird');
-var Recurly = require('./');
+const Promise = require('bluebird')
+const Recurly = require('./')
 
-module.exports = function(RECURLY_CONFIG) {
-  var recurly = new Recurly(RECURLY_CONFIG);
+module.exports = function (RECURLY_CONFIG) {
+  const recurly = new Recurly(RECURLY_CONFIG)
 
-  for (var section in recurly) {
+  for (const section in recurly) {
     if (!recurly.hasOwnProperty(section)) {
-      continue;
+      continue
     }
 
-    for (var method in recurly[section]) {
+    for (const method in recurly[section]) {
       if (!recurly[section].hasOwnProperty(method)) {
-        continue;
+        continue
       }
 
       if (typeof recurly[section][method] !== 'function') {
-        continue;
+        continue
       }
-      recurly[section][method + 'Callback'] = recurly[section][method];
-      recurly[section][method] = Promise.promisify(recurly[section][method]);
+      recurly[section][method + 'Callback'] = recurly[section][method]
+      recurly[section][method] = Promise.promisify(recurly[section][method])
     }
   }
 
-  return recurly;
-};
+  return recurly
+}

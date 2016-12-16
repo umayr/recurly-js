@@ -1,0 +1,40 @@
+[
+  {
+    "scope": "https://unit-test.recurly.com:443",
+    "method": "GET",
+    "path": "/v2/accounts/test_account1/billing_info",
+    "body": "",
+    "status": 200,
+    "response": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<billing_info href=\"https://unit-test.recurly.com/v2/accounts/test_account1/billing_info\" type=\"credit_card\">\n  <account href=\"https://unit-test.recurly.com/v2/accounts/test_account1\"/>\n  <first_name>Some</first_name>\n  <last_name>Dude</last_name>\n  <company nil=\"nil\"></company>\n  <address1 nil=\"nil\"></address1>\n  <address2 nil=\"nil\"></address2>\n  <city nil=\"nil\"></city>\n  <state nil=\"nil\"></state>\n  <zip>55401</zip>\n  <country nil=\"nil\"></country>\n  <phone nil=\"nil\"></phone>\n  <vat_number nil=\"nil\"></vat_number>\n  <ip_address>63.146.31.74</ip_address>\n  <ip_address_country>US</ip_address_country>\n  <card_type>Visa</card_type>\n  <year type=\"integer\">2019</year>\n  <month type=\"integer\">10</month>\n  <first_six>411111</first_six>\n  <last_four>1111</last_four>\n</billing_info>\n",
+    "rawHeaders": [
+      "Date",
+      "Thu, 15 Dec 2016 20:43:40 GMT",
+      "Content-Type",
+      "application/xml; charset=utf-8",
+      "Transfer-Encoding",
+      "chunked",
+      "Connection",
+      "close",
+      "Vary",
+      "Accept-Encoding",
+      "X-Api-Version",
+      "2.0",
+      "Content-Language",
+      "en-US",
+      "X-RateLimit-Limit",
+      "2000",
+      "X-RateLimit-Remaining",
+      "1997",
+      "X-RateLimit-Reset",
+      "1481834880",
+      "Cache-Control",
+      "max-age=0, private, must-revalidate",
+      "X-UA-Compatible",
+      "IE=Edge",
+      "Strict-Transport-Security",
+      "max-age=15552000; includeSubDomains; preload",
+      "Server",
+      "cloudflare-nginx"
+    ]
+  }
+]

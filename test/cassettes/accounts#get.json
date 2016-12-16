@@ -1,0 +1,40 @@
+[
+  {
+    "scope": "https://unit-test.recurly.com:443",
+    "method": "GET",
+    "path": "/v2/accounts/test_account1",
+    "body": "",
+    "status": 200,
+    "response": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<account href=\"https://unit-test.recurly.com/v2/accounts/test_account1\">\n  <adjustments href=\"https://unit-test.recurly.com/v2/accounts/test_account1/adjustments\"/>\n  <invoices href=\"https://unit-test.recurly.com/v2/accounts/test_account1/invoices\"/>\n  <subscriptions href=\"https://unit-test.recurly.com/v2/accounts/test_account1/subscriptions\"/>\n  <transactions href=\"https://unit-test.recurly.com/v2/accounts/test_account1/transactions\"/>\n  <account_code>test_account1</account_code>\n  <state>active</state>\n  <username nil=\"nil\"></username>\n  <email nil=\"nil\"></email>\n  <cc_emails nil=\"nil\"></cc_emails>\n  <first_name nil=\"nil\"></first_name>\n  <last_name nil=\"nil\"></last_name>\n  <company_name nil=\"nil\"></company_name>\n  <vat_number nil=\"nil\"></vat_number>\n  <address>\n    <address1 nil=\"nil\"></address1>\n    <address2 nil=\"nil\"></address2>\n    <city nil=\"nil\"></city>\n    <state nil=\"nil\"></state>\n    <zip nil=\"nil\"></zip>\n    <country nil=\"nil\"></country>\n    <phone nil=\"nil\"></phone>\n  </address>\n  <accept_language nil=\"nil\"></accept_language>\n  <hosted_login_token>85fc92131fe6dd730f3ec49232a2abf5</hosted_login_token>\n  <created_at type=\"datetime\">2016-12-13T19:41:49Z</created_at>\n  <closed_at nil=\"nil\"></closed_at>\n</account>\n",
+    "rawHeaders": [
+      "Date",
+      "Tue, 13 Dec 2016 19:43:58 GMT",
+      "Content-Type",
+      "application/xml; charset=utf-8",
+      "Transfer-Encoding",
+      "chunked",
+      "Connection",
+      "close",
+      "Vary",
+      "Accept-Encoding",
+      "X-Api-Version",
+      "2.0",
+      "Content-Language",
+      "en-US",
+      "X-RateLimit-Limit",
+      "2000",
+      "X-RateLimit-Remaining",
+      "1997",
+      "X-RateLimit-Reset",
+      "1481658480",
+      "Cache-Control",
+      "max-age=0, private, must-revalidate",
+      "X-UA-Compatible",
+      "IE=Edge",
+      "Strict-Transport-Security",
+      "max-age=15552000; includeSubDomains; preload",
+      "Server",
+      "cloudflare-nginx"
+    ]
+  }
+]

@@ -1,4 +1,6 @@
 {
+  "disallowSemicolons": true,
+  "disallowUnusedVariables": true,
   "disallowEmptyBlocks": true,
   "disallowMixedSpacesAndTabs": true,
   "disallowImplicitTypeConversion": [
@@ -55,6 +57,11 @@
     "!=",
     "!=="
   ],
+  "requireSpacesInAnonymousFunctionExpression": {
+    "beforeOpeningRoundBrace": true,
+    "beforeOpeningCurlyBrace": true
+  },
+  "requireSpacesInsideObjectBrackets": "allButNested",
   "requireLineBreakAfterVariableAssignment": true,
   "requireCamelCaseOrUpperCaseIdentifiers": "ignoreProperties",
   "requireSpacesInForStatement": true,

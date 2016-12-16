@@ -1,7 +1,10 @@
-var Recurly = require('../'),
-	config = require('./config-example'),
-	recurly = new Recurly(config),
-	utils = require('../lib/utils');
+'use strict'
+
+// var Recurly = require('../'),
+//   config = require('./config-example'),
+//   recurly = new Recurly(config),
+//   utils = require('../lib/utils');
+//
 
 // recurly.accounts.list(function(res){
 // 	console.log(res);
@@ -55,8 +58,13 @@ var Recurly = require('../'),
 // 	console.log(res);
 // })
 
-// recurly.coupons.create({coupon_code: 'test', name: 'Test name', discount_type: 'percent', discount_percent: 20}, function(res){
-// 	console.log(res);
+// recurly.coupons.create({
+//     coupon_code: 'test',
+//     name: 'Test name',
+//     discount_type: 'percent',
+//     discount_percent: 20},
+//   function(res){
+// 	  console.log(res);
 // })
 
 // recurly.coupons.deactivate('test', function(res){
@@ -103,8 +111,9 @@ var Recurly = require('../'),
 // 	console.log(res);
 // })
 
-// recurly.planAddons.create('premium', { add_on_code: 'test', name: 'Test', unit_amount_in_cents: { EUR: 10 } }, function(res){
-// 	console.log(res);
+// recurly.planAddons.create('premium', {
+//   add_on_code: 'test', name: 'Test', unit_amount_in_cents: { EUR: 10 } }, function(res){
+// 	console.log(res)
 // })
 
 // recurly.planAddons.get('premium', 'test', function(res){
@@ -132,32 +141,32 @@ var Recurly = require('../'),
 // })
 
 // recurly.subscriptions.create(
-// 	{plan_code: 'premium', 
-// 	account: 1, 
+// 	{plan_code: 'premium',
+// 	account: 1,
 // 	currency: 'EUR',
 // 	account: {
-// 		account_code: 1, 
+// 		account_code: 1,
 // 		billing_info: {
 // 			number: '4111-1111-1111-1111',
 // 			first_name: 'Ivan',
 // 			last_name: 'Guardado'
-// 		} 
+// 		}
 // 	}
 // }, function(res){
 // 	console.log(res);
 // })
 
 // recurly.subscriptions.preview(
-// 	{plan_code: 'premium', 
-// 	account: 1, 
+// 	{plan_code: 'premium',
+// 	account: 1,
 // 	currency: 'EUR',
 // 	account: {
-// 		account_code: 1, 
+// 		account_code: 1,
 // 		billing_info: {
 // 			number: '4111-1111-1111-1111',
 // 			first_name: 'Ivan',
 // 			last_name: 'Guardado'
-// 		} 
+// 		}
 // 	}
 // }, function(res){
 // 	console.log(res);

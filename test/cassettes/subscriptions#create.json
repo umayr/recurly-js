@@ -1,0 +1,40 @@
+[
+  {
+    "scope": "https://unit-test.recurly.com:443",
+    "method": "POST",
+    "path": "/v2/subscriptions",
+    "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<subscription>\n\t<plan_code>monthly1</plan_code>\n\t<currency>USD</currency>\n\t<account>\n\t\t<account_code>test_account1</account_code>\n\t</account>\n</subscription>",
+    "status": 201,
+    "response": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<subscription href=\"https://unit-test.recurly.com/v2/subscriptions/3a73123a1d3931cc329f994db5a2b680\">\n  <account href=\"https://unit-test.recurly.com/v2/accounts/test_account1\"/>\n  <invoice href=\"https://unit-test.recurly.com/v2/invoices/1020\"/>\n  <plan href=\"https://unit-test.recurly.com/v2/plans/monthly1\">\n    <plan_code>monthly1</plan_code>\n    <name>Monthly Subscription</name>\n  </plan>\n  <uuid>3a73123a1d3931cc329f994db5a2b680</uuid>\n  <state>active</state>\n  <unit_amount_in_cents type=\"integer\">897</unit_amount_in_cents>\n  <currency>USD</currency>\n  <quantity type=\"integer\">1</quantity>\n  <activated_at type=\"datetime\">2016-12-15T20:57:57Z</activated_at>\n  <canceled_at nil=\"nil\"></canceled_at>\n  <expires_at nil=\"nil\"></expires_at>\n  <total_billing_cycles nil=\"nil\"></total_billing_cycles>\n  <remaining_billing_cycles nil=\"nil\"></remaining_billing_cycles>\n  <current_period_started_at type=\"datetime\">2016-12-15T20:57:57Z</current_period_started_at>\n  <current_period_ends_at type=\"datetime\">2017-01-15T20:57:57Z</current_period_ends_at>\n  <trial_started_at nil=\"nil\"></trial_started_at>\n  <trial_ends_at nil=\"nil\"></trial_ends_at>\n  <terms_and_conditions nil=\"nil\"></terms_and_conditions>\n  <customer_notes nil=\"nil\"></customer_notes>\n  <po_number nil=\"nil\"></po_number>\n  <net_terms type=\"integer\">0</net_terms>\n  <collection_method>automatic</collection_method>\n  <subscription_add_ons type=\"array\">\n  </subscription_add_ons>\n  <a name=\"cancel\" href=\"https://unit-test.recurly.com/v2/subscriptions/3a73123a1d3931cc329f994db5a2b680/cancel\" method=\"put\"/>\n  <a name=\"terminate\" href=\"https://unit-test.recurly.com/v2/subscriptions/3a73123a1d3931cc329f994db5a2b680/terminate\" method=\"put\"/>\n  <a name=\"postpone\" href=\"https://unit-test.recurly.com/v2/subscriptions/3a73123a1d3931cc329f994db5a2b680/postpone\" method=\"put\"/>\n  <a name=\"notes\" href=\"https://unit-test.recurly.com/v2/subscriptions/3a73123a1d3931cc329f994db5a2b680/notes\" method=\"put\"/>\n</subscription>\n",
+    "rawHeaders": [
+      "Date",
+      "Thu, 15 Dec 2016 20:57:58 GMT",
+      "Content-Type",
+      "application/xml; charset=utf-8",
+      "Transfer-Encoding",
+      "chunked",
+      "Connection",
+      "close",
+      "X-Api-Version",
+      "2.0",
+      "Content-Language",
+      "en-US",
+      "X-RateLimit-Limit",
+      "2000",
+      "X-RateLimit-Remaining",
+      "1996",
+      "X-RateLimit-Reset",
+      "1481835720",
+      "Location",
+      "https://unit-test.recurly.com/v2/subscriptions/3a73123a1d3931cc329f994db5a2b680",
+      "Cache-Control",
+      "max-age=0, private, must-revalidate",
+      "X-UA-Compatible",
+      "IE=Edge",
+      "Strict-Transport-Security",
+      "max-age=15552000; includeSubDomains; preload",
+      "Server",
+      "cloudflare-nginx"
+    ]
+  }
+]
