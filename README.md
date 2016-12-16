@@ -1,6 +1,6 @@
 Node-Recurly
 ===============
-[![Build Status](https://travis-ci.org/geoffdutton/recurly-js.svg?branch=master)](https://travis-ci.org/geoffdutton/recurly-js)
+[![Build Status](https://travis-ci.org/geoffdutton/recurly-js.svg)](https://travis-ci.org/geoffdutton/recurly-js)
 
 This is a fork of original `node-recurly` library by [Rob Righter](https://github.com/robrighter) for the recurly recurring billing service. 
 
