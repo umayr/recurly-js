@@ -97,6 +97,7 @@ http://docs.recurly.com/api/coupons
     recurly.coupons.get(couponcode, callback)
     recurly.coupons.create(details, callback)
     recurly.coupons.deactivate(couponcode, callback)
+    recurly.coupons.uniqueCouponCodes(couponCode, params, callback)
 	
 
 Coupon Redemption
