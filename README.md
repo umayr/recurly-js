@@ -129,7 +129,7 @@ http://docs.recurly.com/api/invoices
   Special pdf method - callback will contain a pdf document as `Buffer`
   You should send the buffer to the client with content type of `application/pdf`
   
-    recurly.invoices.retrievePdf(invoicenumber, details, callback)
+    recurly.invoices.exportPdf(invoicenumber, callback)
 
 Subscriptions
 ===============
