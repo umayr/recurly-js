@@ -1,6 +1,7 @@
 Node-Recurly
 ===============
-[![npm](https://img.shields.io/npm/dm/recurly-js.svg)](https://www.npmjs.com/package/recurly-js)  
+[![npm](https://img.shields.io/npm/dm/recurly-js.svg)](https://www.npmjs.com/package/recurly-js) [![Known Vulnerabilities](https://snyk.io/test/github/umayr/recurly-js/badge.svg)](https://snyk.io/test/github/umayr/recurly-js)
+
 
 This is a fork of original `node-recurly` library by [Rob Righter](https://github.com/robrighter) for the recurly recurring billing service. 
 
@@ -168,6 +169,14 @@ http://docs.recurly.com/api/plans/add-ons
     recurly.planAddons.update(plancode, addoncode, details, callback)
     recurly.planAddons.remove(plancode, addoncode, callback)
 
+Purchases
+=========
+https://dev.recurly.com/docs/create-purchase
+
+    recurly.purchases.create(details, callback)
+
+  The purchase endpoint requires API version v2.6. Creating multiple subscriptions requires
+  API v2.8, and some extra feature flags enabled. Contact Recurly support for more details.
 
 Transactions
 ===============
