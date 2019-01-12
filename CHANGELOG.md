@@ -1,5 +1,9 @@
 # Change Log
 
+## v3.1.0 - 2019-01-12
+
+* get all invoice redemptions #43 [everdance]
+
 ## v3.0.0 - 2018-07-14
 
 * add content-type header #33 [MrBar42]
