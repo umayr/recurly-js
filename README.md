@@ -109,7 +109,8 @@ http://docs.recurly.com/api/coupons/coupon-redemption
     recurly.couponRedemption.redeem(couponcode, details, callback)
     recurly.couponRedemption.get(accountcode, callback)
     recurly.couponRedemption.remove(accountcode, callback)
-    recurly.couponRedemption.getByInvoice(invoicenumber, callback)
+    recurly.couponRedemption.getByInvoice(invoicenumber, callback) // Deprecated
+    recurly.couponRedemption.getAllByInvoice(invoicenumber, callback)
 
 Invoices
 ===============
