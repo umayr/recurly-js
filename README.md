@@ -138,7 +138,7 @@ Subscriptions
 http://docs.recurly.com/api/subscriptions
 
     recurly.subscriptions.list(callback, filter) 
-    recurly.subscriptions.listByAccount(accountcode, callback) 
+    recurly.subscriptions.listByAccount(accountcode, callback, filter) 
     recurly.subscriptions.get(uuid, callback) 
     recurly.subscriptions.create(details, callback) 
     recurly.subscriptions.preview(details, callback) 
