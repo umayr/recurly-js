@@ -1,5 +1,13 @@
 # Change Log
 
+## v3.2.0 - 2019-04-12
+
+* add support for filters to subscriptions.listByAccount #45 [thomas-hilaire]
+
+## v3.1.1 - 2019-02-10
+
+* add missed getAllByInvoice method #44 [everdance]
+
 ## v3.1.0 - 2019-01-12
 
 * get all invoice redemptions #43 [everdance]
