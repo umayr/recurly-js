@@ -1,4 +1,4 @@
-Node-Recurly
+Recurly-js
 ===============
 [![npm](https://img.shields.io/npm/dm/recurly-js.svg)](https://www.npmjs.com/package/recurly-js) [![Known Vulnerabilities](https://snyk.io/test/github/umayr/recurly-js/badge.svg)](https://snyk.io/test/github/umayr/recurly-js)
 
