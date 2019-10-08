@@ -1,5 +1,5 @@
 {
-  "name": "recurly-js",
+  "name": "recurly-nodejs",
   "description": "Library for accessing the api for the Recurly recurring billing service.",
   "keywords": [
     "recurly",
@@ -7,7 +7,7 @@
     "recurring billing"
   ],
   "version": "3.2.0",
-  "homepage": "https://github.com/umayr/recurly-js",
+  "homepage": "https://github.com/markovaljaots/recurly-nodejs",
   "author": "Rob Righter <robrighter@gmail.com> (http://github.com/robrighter)",
   "contributors": [
     "Iván Guardado <dev.ivangc@gmail.com> (http://github.com/IvanGuardado)",
@@ -17,7 +17,7 @@
     "Thodoris Greasidis <thgreasi@gmail.com> (https://github.com/thgreasi)"
   ],
   "bugs": {
-    "url": "https://github.com/umayr/recurly-js/issues"
+    "url": "https://github.com/markovaljaots/recurly-nodejs/issues"
   },
   "directories": {
     "test": "test"
@@ -36,7 +36,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/umayr/recurly-js.git"
+    "url": "git+https://github.com/markovaljaots/recurly-nodejs.git"
   },
   "license": "ISC"
 }

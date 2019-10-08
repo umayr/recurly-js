@@ -1,15 +1,13 @@
-# Recurly-js
-[![npm](https://img.shields.io/npm/dm/recurly-js.svg)](https://www.npmjs.com/package/recurly-js) [![Known Vulnerabilities](https://snyk.io/test/github/umayr/recurly-js/badge.svg)](https://snyk.io/test/github/umayr/recurly-js)
+# Recurly-nodejs
 
-
-This is a fork of original `node-recurly` library by [Rob Righter](https://github.com/robrighter) for the recurly recurring billing service. 
+This is a fork of original `node-recurly` library by [Rob Righter](https://github.com/robrighter) for the recurly recurring billing service.
 
 This library is intended to follow very closely the recurly documentation found at: [Recurly Docs](http://docs.recurly.com/)
 
 
 ## Installation
 ```
-npm install recurly-js --save
+npm install recurly-nodejs --save
 ```
 
 Add a config file to your project that has contents similar to:
@@ -29,7 +27,7 @@ module.exports = {
 #### Using callbacks
 
 ```javascript
-var Recurly = require('recurly-js');
+var Recurly = require('recurly-nodejs');
 var recurly = new Recurly(require('./config'));
 recurly.accounts.get('account_code_123', function (errResponse, response) {
 })
@@ -38,7 +36,7 @@ recurly.accounts.get('account_code_123', function (errResponse, response) {
 #### Or a promises based version
 
 ```javascript
-var Recurly = require('recurly-js/promise');
+var Recurly = require('recurly-nodejs/promise');
 var recurly = new Recurly(require('./config'));
 recurly.accounts.get('account_code_123')
   .then(function (response) {})
@@ -62,9 +60,9 @@ recurly.subscriptions.listByAccountCallback('account_code_123', callback, filter
 ```javascript
 recurly.accounts.list(callback, filter)
 recurly.accounts.create(details, callback)
-recurly.accounts.update(accountcode, details, callback) 
-recurly.accounts.get(accountcode, callback) 
-recurly.accounts.close(accountcode, callback) 
+recurly.accounts.update(accountcode, details, callback)
+recurly.accounts.get(accountcode, callback)
+recurly.accounts.close(accountcode, callback)
 recurly.accounts.reopen(accountcode, callback)
 recurly.accounts.notes(accountcode, callback)
 ```
@@ -73,9 +71,9 @@ recurly.accounts.notes(accountcode, callback)
 > http://docs.recurly.com/api/billing-info
 
 ```javascript
-recurly.billingInfo.update(accountcode, details, callback) 
-recurly.billingInfo.get(accountcode, callback) 
-recurly.billingInfo.remove(accountcode, callback) 
+recurly.billingInfo.update(accountcode, details, callback)
+recurly.billingInfo.get(accountcode, callback)
+recurly.billingInfo.remove(accountcode, callback)
 ```
 
 ### Adjustments
@@ -126,7 +124,7 @@ recurly.invoices.enterOfflinePayment(invoicenumber, details, callback)
 
 Special pdf method - callback will contain a pdf document as `Buffer`
 You should send the buffer to the client with content type of `application/pdf`
- 
+
 ```javascript
 recurly.invoices.retrievePdf(invoicenumber, details, callback)
 ```
@@ -135,26 +133,26 @@ recurly.invoices.retrievePdf(invoicenumber, details, callback)
 > http://docs.recurly.com/api/subscriptions
 
 ```javascript
-recurly.subscriptions.list(callback, filter) 
-recurly.subscriptions.listByAccount(accountcode, callback, filter) 
-recurly.subscriptions.get(uuid, callback) 
-recurly.subscriptions.create(details, callback) 
-recurly.subscriptions.preview(details, callback) 
-recurly.subscriptions.update(uuid, details, callback) 
+recurly.subscriptions.list(callback, filter)
+recurly.subscriptions.listByAccount(accountcode, callback, filter)
+recurly.subscriptions.get(uuid, callback)
+recurly.subscriptions.create(details, callback)
+recurly.subscriptions.preview(details, callback)
+recurly.subscriptions.update(uuid, details, callback)
 recurly.subscriptions.updateNotes(uuid, details, callback)
 recurly.subscriptions.updatePreview(uuid, details, callback)
-recurly.subscriptions.cancel(uuid, callback) 
-recurly.subscriptions.reactivate(uuid, callback) 
-recurly.subscriptions.terminate(uuid, refundType, callback) 
-recurly.subscriptions.postpone(uuid, nextRenewalDate, callback) 
+recurly.subscriptions.cancel(uuid, callback)
+recurly.subscriptions.reactivate(uuid, callback)
+recurly.subscriptions.terminate(uuid, refundType, callback)
+recurly.subscriptions.postpone(uuid, nextRenewalDate, callback)
 ```
 
 ### Subscription Plans
 > http://docs.recurly.com/api/plans
 
 ```javascript
-recurly.plans.list(callback, filter) 
-recurly.plans.get(plancode, callback) 
+recurly.plans.list(callback, filter)
+recurly.plans.get(plancode, callback)
 recurly.plans.create(details, callback)
 recurly.plans.update(plancode, details, callback)
 recurly.plans.remove(plancode, callback)
@@ -164,8 +162,8 @@ recurly.plans.remove(plancode, callback)
 > http://docs.recurly.com/api/plans/add-ons
 
 ```javascript
-recurly.planAddons.list(plancode, callback, filter) 
-recurly.planAddons.get(plancode, addoncode, callback) 
+recurly.planAddons.list(plancode, callback, filter)
+recurly.planAddons.get(plancode, addoncode, callback)
 recurly.planAddons.create(plancode, details, callback)
 recurly.planAddons.update(plancode, addoncode, details, callback)
 recurly.planAddons.remove(plancode, addoncode, callback)
@@ -185,22 +183,22 @@ API v2.8, and some extra feature flags enabled. Contact Recurly support for more
 > http://docs.recurly.com/api/transactions
 
 ```javascript
-recurly.transactions.list(callback, filter) 
-recurly.transactions.listByAccount(accountcode, callback, filter) 
-recurly.transactions.get(id, callback) 
-recurly.transactions.create(details, callback) 
-recurly.transactions.refund(id, callback, amount) 
+recurly.transactions.list(callback, filter)
+recurly.transactions.listByAccount(accountcode, callback, filter)
+recurly.transactions.get(id, callback)
+recurly.transactions.create(details, callback)
+recurly.transactions.refund(id, callback, amount)
 ```
 
 ### Usage Records
 > https://dev.recurly.com/docs/usage-record-object
 
 ```javascript
-recurly.usageRecords.list(subscription_uuid, add_on_code, callback, filter) 
-recurly.usageRecords.lookup(subscription_uuid, add_on_code, usage_id, callback) 
-recurly.usageRecords.log(subscription_uuid, add_on_code, details, callback) 
-recurly.usageRecords.update(subscription_uuid, add_on_code, usage_id, details, callback) 
-recurly.usageRecords.delete(subscription_uuid, add_on_code, usage_id, callback) 
+recurly.usageRecords.list(subscription_uuid, add_on_code, callback, filter)
+recurly.usageRecords.lookup(subscription_uuid, add_on_code, usage_id, callback)
+recurly.usageRecords.log(subscription_uuid, add_on_code, details, callback)
+recurly.usageRecords.update(subscription_uuid, add_on_code, usage_id, details, callback)
+recurly.usageRecords.delete(subscription_uuid, add_on_code, usage_id, callback)
 ```
 
 ### Custom API calls
@@ -218,8 +216,3 @@ var options = {
 
 recurly.api(options, callback)
 ```
-
-
-## Maintainers
-
-<table><tr><td align="center"><a href="https://github.com/thgreasi"><img src="https://avatars0.githubusercontent.com/u/1295829?s=400&v=4" width="100px;" alt="Thodoris Greasidis"/><br /><sub><b>Thodoris Greasidis</b></sub></a><br /></td><td align="center"><a href="https://github.com/umayr"><img src="https://avatars3.githubusercontent.com/u/3071948?s=400&v=4" width="100px;" alt="Umayr Shahid"/><br /><sub><b>Umayr Shahid</b></sub></a><br /></td></tr></table>
